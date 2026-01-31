@@ -1,0 +1,154 @@
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage{comment}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Devin}{Seth}{
+  \urlstyle{same}
+  \href{mailto:sethd@rpi.edu}{sethd@rpi.edu} \;|\;
+  609-212-9150 \;|\;
+  \href{https://github.com/derpop}{github.com/derpop} \;|\;
+  \href{https://https://www.linkedin.com/in/devinseth/}{https://www.linkedin.com/in/devinseth}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+\section{Education}
+\subsection{Rensselear Polytechnic Institute}
+\descript{B.S. Physics \& Computer Science (Dual)}
+\location{Expected May 2028 | Troy, NY}
+\sectionsep
+
+\subsection{The Hun School of Princeton}
+\descript{High School Diploma}
+\location{June 2024 | Princeton, NJ}
+
+\begin{comment}
+\section{Technical Summary}
+\begin{itemize}\itemsep 0.2em
+  \item Computational astrophysics: N-body simulation (EXP), stellar evolution (MESA), data analysis.
+  \item Systems/automation: OCR-driven inventory workflows, data analysis.
+  \item HPC practices: multi threading, MPI, Linux tooling, Git/GitHub.
+\end{itemize}
+\sectionsep
+\end{comment}
+
+
+\section{Skills}
+\textbf{Languages \& Tools:} Python, C++, Java, C\#, MATLAB, \LaTeX, Git/GitHub \\
+\textbf{Scientific Computing:} NumPy, SciPy, Matplotlib, Astropy, Mathematica \\
+\textbf{Astrophysics/HPC:} EXP ($N$-body), MESA, MPI, Linux, Multithreading
+\sectionsep
+
+\section{Coursework}
+Data Structures \textbullet{} Linear Algebra \textbullet{} Differential Equations \\
+Electromagnetic Theory \textbullet{} Introduction to Quantum Physics
+\sectionsep
+
+\section{Awards}
+\begin{tabular}{r@{\hspace{0.6em}}l}
+2023 & INSPIRE Award (FTC) \\
+2024 & Dean’s List — {RPI} \\
+\end{tabular}
+\sectionsep
+
+
+\section{Projects}
+\runsubsection{Efficient Octree-Based N-Body Simulation}
+\location{Nov 2024}
+\begin{itemize}\itemsep -0.3em
+  \item Built a Barnes–Hut (octree) $N$-body simulator to model galaxy interactions, reducing complexity from $O(N^2)$ to $O(N\log N)$.  
+  \item Implemented in C\# with multithreading; supports real-time 3D visualization
+  \item Designed for scalability (2,000–10,000+ particles), with planned GPU acceleration
+  \item Code: \href{https://github.com/derpop/GravitySimulation}{github.com/derpop/GravitySimulation}  
+\end{itemize}
+
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Work Experience}
+\runsubsection{Evolution of Smooth (EOS)}
+\descript{| R\&D Engineer}
+\location{Jun 2025 – Aug 2025}
+\begin{itemize}\itemsep -0.4em
+  \item Designed and deployed an automated, inventory tracking system.
+  \item Built an OCR pipeline to parse shipping tags and populate order records, reducing manual errors.
+  \item Supported \textasciitilde{}8{,}000 SKUs; processed $>$100{,}000 items for e-commerce channels.
+  \item Increased order accuracy rate to $\sim$99\% by eliminating mis-entered records.
+
+\end{itemize}
+\section{Clubs}
+\runsubsection{RXPI (Rensselaer Experimental Propulsion)}
+\descript{| Systems Programmer}
+\location{Nov 2024 – Present}
+\begin{itemize}\itemsep -0.3em
+  \item Contributed to the design and operation of a liquid-fueled rocket engine (kerosene / nitrous oxide).  
+  \item Programmed microcontroller systems to manage engine startup, shutdown, and communication protocols.  
+  \item Developed and maintained control software; open-source code available at: \href{https://github.com/Rensselaer-Spaceflight-Society/Rocket-Engine}{github.com/Rensselaer-Spaceflight-Society/Rocket-Engine}.  
+\end{itemize}
+
+
+\section{Research}
+\runsubsection{Stellar Evolution of Main Sequence Stars Powered Only by the PP Chain}
+\descript{| Researcher \& Author}
+\location{May 2024 – Oct 2024 \; | \; East Windsor, NJ}
+\begin{itemize}\itemsep -0.3em
+  \item Independently designed and executed a stellar evolution study using MESA, restricting nuclear reactions to the proton–proton (PP) chain. 
+  \item Modeled stars from $1$–$2\,M_\odot$ to compare lifetimes, luminosities, and structural properties with standard (PP + CNO + triple-alpha) networks. 
+  \item Found counterintuitive results: PP-only stars were \textit{longer lived and more luminous}, with hotter, denser cores and altered shell-burning behavior. 
+  \item Proposed convective overshoot as a mechanism extending PP-chain main sequence lifetimes, connecting results to models of Population III stars. 
+  \item Published results in the \textit{Journal of Student Research} \href{https://doi.org/10.47611/jsrhs.v13i1.6021}{DOI}, 300+ downloads.
+\end{itemize}
+\sectionsep
+
+\runsubsection{Heidi Newberg Research Group}
+\descript{| Undergraduate Researcher}
+\location{Jan 2025 – Present \; | \; Troy, NY}
+\begin{itemize}\itemsep -0.3em
+  \item Develop high-resolution $N$-body models of the Milky Way and Large Magellanic Cloud (LMC) to investigate tidal interactions and stellar stream formation. 
+  \item Simulate galactic collisions with $>$5{,}000{,}000 particles using the EXP code on HPC resources (dual-socket Xeon, 48 threads, 187\,GiB RAM). 
+  \item Analyze resulting tidal streams and disk substructure to test competing dark-matter halo models of the Milky Way. 
+  \item Generate and validate simulation outputs to serve as input datasets for a new developmental feature on \textit{Milkyway@home}. 
+  \item Serve as the most senior undergraduate in the project, maintaining continuity of methods and mentoring new team members. 
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
